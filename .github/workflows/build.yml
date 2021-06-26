@@ -4,7 +4,7 @@ jobs:
   test:
     if: |
       !startsWith(github.ref, 'refs/tags')
-    name: Generate build and test
+    name: Generate build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

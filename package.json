@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "webextension-toolbox dev",
     "build": "webextension-toolbox build",
-    "build-all": "webextension-toolbox build chrome firefox opera edge"
+    "build-all": "webextension-toolbox build chrome && webextension-toolbox build firefox && webextension-toolbox build opera && webextension-toolbox build edge"
   },
   "devDependencies": {
     "webextension-toolbox": "latest"
