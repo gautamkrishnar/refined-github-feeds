@@ -1,23 +1,26 @@
 # Refined GitHub Feeds
-Making the GitHub news feeds great again. This extension enables you to filter the GitHub news feed based on different event types:
+Making the GitHub news feeds great again. This extension enables you to filter the GitHub news feeds based on different event types:
 
 https://user-images.githubusercontent.com/8397274/123520376-05921980-d6ce-11eb-8f6d-04d09e1486c9.mov
 
 ### Why?
 
-Until recently GitHub news feeds was really good and easy to use. It only contained the following notification items:
-
+Until recently GitHub news feeds was really good and easy to use. It only contained the following feed items:
 - Stars on your projects
 - Someone followed you
 - Someone forked your repo
 
-Recently GitHub added lots of stuff to the news feed, and they made it cluttered. They even added release feeds from the starred repos.
+Recently GitHub added a lots of stuff to the news feed making it cluttered. They even added release feeds from the starred repos.
 
-I had opened a thread on GitHub community and found that the most people were not happy about it since it kills the purpose of stars.
+I had opened a thread on GitHub community and found that it is a new GitHub feature. From the thread I also the most people are extremely unhappy about it, following are the reasons:
+- It kills the true purpose of stars: Stars were supposed to be used as a bookmark or the way of showing appreciation towards the project. Starring a project doesn't necessarily means that I want to follow the project release updates. Its true purpose is to determine the popluarity of a project.
+- There is already a release option under the watch menu.
+- This feature is annoying since the news feed is getting cluttered due to the release feeds.
+- People will miss the important notifications since their news feed is cluttered.
 
-Thread Link: https://github.community/t/why-i-am-seeing-releases-from-repos-that-i-didnt-subscribed/184239
+Discussions link: https://github.community/t/why-i-am-seeing-releases-from-repos-that-i-didnt-subscribed/184239
 
-I developed this extension as temporary solution to the issue, so that I can remove all the junks from my feeds until GitHub adds a filter or remove this feature entirely. 
+I developed this extension as temporary solution to the issue, so that I can remove all the junks from my feeds until GitHub adds a filter or remove this feature entirely. I am open sourcing this so that others can also use it.
 
 ## Supported Browsers
 - Chrome 
