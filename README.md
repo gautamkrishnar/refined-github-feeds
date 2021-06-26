@@ -12,15 +12,15 @@ Until recently GitHub news feeds was really good and easy to use. It only contai
 
 Recently GitHub added a lots of stuff to the news feed making it cluttered. They even added release feeds from the starred repos.
 
-I had opened a thread on GitHub community and found that it is a new GitHub feature. From the thread I also the most people are extremely unhappy about it, following are the reasons:
-- It kills the true purpose of stars: Stars were supposed to be used as a bookmark or the way of showing appreciation towards the project. Starring a project doesn't necessarily means that I want to follow the project release updates. Its true purpose is to determine the popluarity of a project.
+I had opened a thread on GitHub community and found that it is a new GitHub feature. From the thread I also knew that most people are extremely unhappy about it, following are the main reasons:
+- It kills the true purpose of stars: Stars were supposed to be used as a bookmark or the way of showing appreciation towards the project. Starring a project doesn't necessarily means that I want to follow the project's release updates. Its true purpose is to determine the popluarity of a project.
 - There is already a release option under the watch menu.
 - This feature is annoying since the news feed is getting cluttered due to the release feeds.
 - People will miss the important notifications since their news feed is cluttered.
 
 Discussions link: https://github.community/t/why-i-am-seeing-releases-from-repos-that-i-didnt-subscribed/184239
 
-I developed this extension as temporary solution to the issue, so that I can remove all the junks from my feeds until GitHub adds a filter or remove this feature entirely. I am open sourcing this so that others can also use it.
+I developed this extension as temporary solution for the issue, so that I can remove all the junks from my feeds until GitHub adds a filter or remove this feature entirely. I am open sourcing this so that others can also use it.
 
 ## Supported Browsers
 - Chrome 
