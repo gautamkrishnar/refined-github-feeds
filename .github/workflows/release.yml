@@ -19,10 +19,11 @@ jobs:
         run: |
           npm install
           npm run build-all
-          zip -r dist/chrome.zip dist/chrome
-          zip -r dist/edge.zip dist/edge
-          zip -r dist/firefox.zip dist/firefox
-          zip -r dist/opera.zip dist/opera
+          cd dist
+          zip -r chrome.zip chrome
+          zip -r edge.zip edge
+          zip -r firefox.zip firefox
+          zip -r opera.zip opera
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v1
