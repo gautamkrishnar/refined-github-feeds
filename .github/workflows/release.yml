@@ -1,0 +1,40 @@
+on:
+  push:
+    tags:
+      - '*'
+
+name: Create Release
+
+jobs:
+  build:
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12"
+      - name: Build
+        run: |
+          npm install
+          npm run build-all
+          zip -r dist/chrome.zip dist/chrome
+          zip -r dist/edge.zip dist/edge
+          zip -r dist/firefox.zip dist/firefox
+          zip -r dist/opera.zip dist/opera
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: |
+            dist/chrome.zip
+            dist/edge.zip
+            dist/firefox.zip
+            dist/opera.zip
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: true
+          prerelease: false

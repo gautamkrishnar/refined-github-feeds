@@ -1,0 +1,13 @@
+{
+  "name": "Refined-Github-Feeds",
+  "version": "1.0.0",
+  "description": "Making the GitHub news feeds great again",
+  "scripts": {
+    "dev": "webextension-toolbox dev",
+    "build": "webextension-toolbox build",
+    "build-all": "webextension-toolbox build chrome firefox opera edge"
+  },
+  "devDependencies": {
+    "webextension-toolbox": "latest"
+  }
+}
