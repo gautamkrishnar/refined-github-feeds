@@ -24,6 +24,9 @@ jobs:
           zip -r edge.zip edge
           zip -r firefox.zip firefox
           zip -r opera.zip opera
+      - name: Get the version
+        id: get_version
+        run: echo ::set-output name=VERSION::$(echo $GITHUB_REF | cut -d / -f 3)
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v1
@@ -35,7 +38,7 @@ jobs:
             ./dist/edge.zip
             ./dist/firefox.zip
             ./dist/opera.zip
-          tag_name: ${{ github.ref }}
-          release_name: ${{ github.ref }}
+          tag_name: ${{ steps.get_version.outputs.VERSION }}
+          release_name: ${{ steps.get_version.outputs.VERSION }}
           draft: false
           prerelease: false
