@@ -1,4 +1,4 @@
-const { CSSStyles, InitAndReturnStates, STORAGE_KEY } = require('./shared');
+const { CSSStyles, InitAndReturnStates, STORAGE_KEY, STYLE_ID } = require('./shared');
 let SavedState = null;
 
 async function onLoad() {
@@ -14,7 +14,7 @@ async function onClickHandler(event) {
     const type = event.target.id;
     SavedState[type] = event.target.checked;
     await browser.tabs.executeScript({
-        code: `if (document.querySelector("#rRGHFSavedStyles")) { document.head.removeChild(document.querySelector("#rRGHFSavedStyles"))}`
+        code: `if (document.querySelector("#${STYLE_ID}")) { document.head.removeChild(document.querySelector("#${STYLE_ID}"))}`
     });
 
     const tab = await browser.tabs.query({currentWindow: true, active: true}).then(data=> data[0]);
