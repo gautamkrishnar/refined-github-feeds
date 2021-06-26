@@ -1,6 +1,7 @@
 # Refined GitHub Feeds
 Making the GitHub news feeds great again. This extension enables you to filter the GitHub news feed based on different event types:
-![preview](https://siasky.net/AAD89tktgCykedWf3JjVVcN_YYkYMcr6f5PMP0BetMzT2A)
+
+https://user-images.githubusercontent.com/8397274/123520376-05921980-d6ce-11eb-8f6d-04d09e1486c9.mov
 
 ### Why?
 
