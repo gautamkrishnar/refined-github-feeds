@@ -48,6 +48,28 @@ I developed this extension as temporary solution for the issue, so that I can re
 * Once the extension is loaded you can see its icon in the toolbar
 * Click on the extension icon and use it
 
+### Edge
+
+* Open `edge://extensions` in edge
+* Toggle the developer mode by clicking on the toggle button on the left bottom corner
+* Download the latest release from the [releases page](https://github.com/gautamkrishnar/refined-github-feeds/releases/latest)
+* Extract the release file
+* Load extension in the browser using the **Load Unpacked** button. Point to the extracted release folder.
+* Click on the extension icon and use it
+
+
+
+### Opera
+
+* Open `opera://extensions` in opera
+* Toggle the developer mode by clicking on the toggle button on the top right corner
+* Download the latest release from the [releases page](https://github.com/gautamkrishnar/refined-github-feeds/releases/latest)
+* Extract the release file
+* Load extension in the browser using the **Load Unpacked** button. Point to the extracted release folder.
+* Click on the extension icon and use it
+
+
+
 ## Development
 
 ### Install
