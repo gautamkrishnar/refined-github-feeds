@@ -19,6 +19,12 @@ Thread Link: https://github.community/t/why-i-am-seeing-releases-from-repos-that
 
 I developed this extension as temporary solution to the issue, so that I can remove all the junks from my feeds until GitHub adds a filter or remove this feature entirely. 
 
+## Supported Browsers
+- Chrome 
+- Firefox
+- Opera
+- Edge
+
 ## Setup
 
 ### Chrome
