@@ -45,7 +45,7 @@ I developed this extension as temporary solution for the issue, so that I can re
 * Download the latest release from the [releases page](https://github.com/gautamkrishnar/motrix-chrome-extension/releases/latest)
 * Click on **Load Temporary add-on...** button
 * Select the downloaded zip file
-* Once the extension is loaded you can see its icon in the toolbar, Set an API Key by clicking on the extension icon set any value you like
+* Once the extension is loaded you can see its icon in the toolbar
 * Click on the extension icon and use it
 
 ## Development
