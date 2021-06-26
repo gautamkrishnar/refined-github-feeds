@@ -12,4 +12,4 @@ jobs:
         with:
           node-version: "12"
       - run: npm install
-      - run: npm build-all
+      - run: npm run build-all
