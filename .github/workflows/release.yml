@@ -19,11 +19,15 @@ jobs:
         run: |
           npm install
           npm run build-all
-          cd dist
-          zip -r chrome.zip chrome
-          zip -r edge.zip edge
-          zip -r firefox.zip firefox
-          zip -r opera.zip opera
+          cd dist/chrome
+          zip -r ../chrome.zip *
+          cd ../edge
+          zip -r ../edge.zip *
+          cd ../firefox
+          zip -r ../firefox.zip *
+          cd ../opera
+          zip -r ../opera.zip *
+          cd ../..
       - name: Get the version
         id: get_version
         run: echo ::set-output name=VERSION::$(echo $GITHUB_REF | cut -d / -f 3)

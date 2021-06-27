@@ -1,6 +1,6 @@
 {
   "name": "refined-github-feeds",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Making the GitHub news feeds great again",
   "scripts": {
     "dev": "webextension-toolbox dev",
