@@ -28,6 +28,13 @@ I developed this extension as temporary solution for the issue, so that I can re
 - Opera
 - Edge
 
+## Downloads
+- [Github Releases](https://github.com/gautamkrishnar/refined-github-feeds/releases/latest)
+- Chrome webstore - **Coming Soon (Under review)**
+- Edge Add-ons - **Coming Soon**
+- Opera Add-ons -  **Coming Soon**
+- Firefox Add-ons - **Coming Soon**
+
 ## Setup
 
 ### Chrome
