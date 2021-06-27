@@ -3,25 +3,6 @@ Making the GitHub news feeds great again. This extension enables you to filter t
 
 https://user-images.githubusercontent.com/8397274/123520376-05921980-d6ce-11eb-8f6d-04d09e1486c9.mov
 
-### Why?
-
-Until recently GitHub news feeds was really good and easy to use. It only contained the following feed items:
-- Stars on your projects
-- Someone followed you
-- Someone forked your repo
-
-Recently GitHub added a lots of stuff to the news feed making it cluttered. They even added release feeds from the starred repos.
-
-I had opened a thread on GitHub community and found that it is a new GitHub feature. From the thread I also knew that most people are extremely unhappy about it, following are the main reasons:
-- It kills the true purpose of stars: Stars were supposed to be used as a bookmark or the way of showing appreciation towards the project. Starring a project doesn't necessarily means that I want to follow the project's release updates. Its true purpose is to determine the popluarity of a project.
-- There is already a release option under the watch menu.
-- This feature is annoying since the news feed is getting cluttered due to the release feeds.
-- People will miss the important notifications since their news feed is cluttered.
-
-Discussions link: https://github.community/t/why-i-am-seeing-releases-from-repos-that-i-didnt-subscribed/184239
-
-I developed this extension as temporary solution for the issue, so that I can remove all the junks from my feeds until GitHub adds a filter or remove this feature entirely. I am open sourcing this so that others can also use it.
-
 ## Supported Browsers
 - Chrome 
 - Firefox
@@ -37,7 +18,7 @@ I developed this extension as temporary solution for the issue, so that I can re
 
 ## Installing via Github Releases
 
-### Chrome
+#### Chrome
 
 * Open `chrome://extensions` in chrome
 * Toggle the developer mode by clicking on the toggle button on the top right corner
@@ -46,7 +27,7 @@ I developed this extension as temporary solution for the issue, so that I can re
 * Load extension in the browser using the **Load Unpacked** button. Point to the extracted release folder.
 * Click on the extension icon and use it
 
-### Firefox
+#### Firefox
 * Open `about:debugging` in firefox
 * Click on This firefox option on left
 * Download the latest release from the [releases page](https://github.com/gautamkrishnar/motrix-chrome-extension/releases/latest)
@@ -55,7 +36,7 @@ I developed this extension as temporary solution for the issue, so that I can re
 * Once the extension is loaded you can see its icon in the toolbar
 * Click on the extension icon and use it
 
-### Edge
+#### Edge
 
 * Open `edge://extensions` in edge
 * Toggle the developer mode by clicking on the toggle button on the left bottom corner
@@ -64,9 +45,7 @@ I developed this extension as temporary solution for the issue, so that I can re
 * Load extension in the browser using the **Load Unpacked** button. Point to the extracted release folder.
 * Click on the extension icon and use it
 
-
-
-### Opera
+#### Opera
 
 * Open `opera://extensions` in opera
 * Toggle the developer mode by clicking on the toggle button on the top right corner
@@ -75,7 +54,24 @@ I developed this extension as temporary solution for the issue, so that I can re
 * Load extension in the browser using the **Load Unpacked** button. Point to the extracted release folder.
 * Click on the extension icon and use it
 
+## Why?
 
+Until recently GitHub news feeds were really good and easy to use. It only contained the following feed items:
+- Stars on your projects
+- Followed you
+- Forked your project
+
+Recently GitHub added a lots of stuff to the news feed making it really cluttered. They even added release feeds from the starred repos.
+
+I had opened a thread on GitHub community and found that it is a new GitHub feature. From the thread I also knew that most people are extremely unhappy about it, following are the main reasons:
+- It kills the true purpose of stars: Stars were supposed to be used as a bookmark or the way of showing appreciation towards the project. Starring a project doesn't necessarily means that I want to follow the project's release updates. Its true purpose is to determine the popluarity of a project.
+- There is already a release option under the watch menu.
+- This feature is annoying since the news feed is getting cluttered due to the release feeds.
+- People will miss the important notifications since their news feed is cluttered.
+
+Discussions link: https://github.community/t/why-i-am-seeing-releases-from-repos-that-i-didnt-subscribed/184239
+
+I developed this extension as temporary solution for the issue, so that I can remove all the junks from my feeds until GitHub adds a filter or remove this feature entirely. I am open sourcing this so that others can also use it.
 
 ## Development
 
