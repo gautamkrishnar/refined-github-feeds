@@ -1,47 +1,66 @@
+# FILE GENERATED WITH: npx ghat fregante/ghatemplates/webext/release.yml
+# SOURCE: https://github.com/fregante/ghatemplates
+
+env:
+  DIRECTORY: dist
+name: Release
 on:
-  push:
-    tags:
-      - '*'
-
-name: Create Release
-
+  workflow_dispatch: null
+  schedule:
+    - cron: 00 12 * * *
 jobs:
-  build:
-    name: Create Release
+  Version:
+    outputs:
+      created: ${{ steps.daily-version.outputs.created }}
+      version: ${{ steps.daily-version.outputs.version }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
         with:
-          node-version: "12"
-      - name: Build
+          fetch-depth: 20
+      - name: install
+        run: npm ci || npm install
+      - uses: fregante/daily-version-action@v1
+        name: Create tag if necessary
+        id: daily-version
+      - uses: fregante/release-with-changelog@v3
+        if: steps.daily-version.outputs.created
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          exclude: true
+  Submit:
+    needs: Version
+    if: github.event_name == 'workflow_dispatch' || needs.Version.outputs.created
+    strategy:
+      fail-fast: false
+      matrix:
+        command:
+          - firefox
+          - chrome
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: install
+        run: npm ci || npm install
+      - run: npm run build ${{ matrix.command }}
+      - name: Update extension’s meta
+        run: >-
+          npx dot-json@1 $DIRECTORY/${{ matrix.command }}/manifest.json version ${{
+          needs.Version.outputs.version }}
+      - name: Submit
         run: |
-          npm install
-          npm run build-all
-          cd dist/chrome
-          zip -r ../chrome.zip *
-          cd ../edge
-          zip -r ../edge.zip *
-          cd ../firefox
-          zip -r ../firefox.zip *
-          cd ../opera
-          zip -r ../opera.zip *
-          cd ../..
-      - name: Get the version
-        id: get_version
-        run: echo ::set-output name=VERSION::$(echo $GITHUB_REF | cut -d / -f 3)
-      - name: Create Release
-        id: create_release
-        uses: softprops/action-gh-release@v1
+          case ${{ matrix.command }} in
+            chrome)
+              cd $DIRECTORY/${{ matrix.command }} && npx chrome-webstore-upload-cli@1 upload --auto-publish
+              ;;
+            firefox)
+              cd $DIRECTORY/${{ matrix.command }} && npx web-ext-submit@5
+              ;;
+          esac
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          files: |
-            ./dist/chrome.zip
-            ./dist/edge.zip
-            ./dist/firefox.zip
-            ./dist/opera.zip
-          tag_name: ${{ steps.get_version.outputs.VERSION }}
-          draft: false
-          prerelease: false
+          EXTENSION_ID: ${{ secrets.EXTENSION_ID }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+          REFRESH_TOKEN: ${{ secrets.REFRESH_TOKEN }}
+          WEB_EXT_API_KEY: ${{ secrets.WEB_EXT_API_KEY }}
+          WEB_EXT_API_SECRET: ${{ secrets.WEB_EXT_API_SECRET }}
