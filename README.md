@@ -14,45 +14,9 @@ https://user-images.githubusercontent.com/8397274/123520376-05921980-d6ce-11eb-8
 [link-firefox]: https://addons.mozilla.org/en-US/firefox/addon/refined-github-feeds/ 'Version published on Mozilla Add-ons'
 
 [<img src="https://raw.githubusercontent.com/alrra/browser-logos/90fdf03c/src/firefox/firefox.svg" width="48" alt="Firefox" valign="middle">][link-firefox] [<img valign="middle" src="https://img.shields.io/amo/v/refined-github-feeds.svg?label=%20">][link-firefox]
- 
-### Installing via Github Releases
-Download the latest release from [Github Releases](https://github.com/gautamkrishnar/refined-github-feeds/releases/latest)
 
-#### Chrome
-
-* Open `chrome://extensions` in chrome
-* Toggle the developer mode by clicking on the toggle button on the top right corner
-* Download the latest release from the [releases page](https://github.com/gautamkrishnar/refined-github-feeds/releases/latest)
-* Extract the release file
-* Load extension in the browser using the **Load Unpacked** button. Point to the extracted release folder.
-* Click on the extension icon and use it
-
-#### Firefox
-* Open `about:debugging` in firefox
-* Click on This firefox option on left
-* Download the latest release from the [releases page](https://github.com/gautamkrishnar/motrix-chrome-extension/releases/latest)
-* Click on **Load Temporary add-on...** button
-* Select the downloaded zip file
-* Once the extension is loaded you can see its icon in the toolbar
-* Click on the extension icon and use it
-
-#### Edge
-
-* Open `edge://extensions` in edge
-* Toggle the developer mode by clicking on the toggle button on the left bottom corner
-* Download the latest release from the [releases page](https://github.com/gautamkrishnar/refined-github-feeds/releases/latest)
-* Extract the release file
-* Load extension in the browser using the **Load Unpacked** button. Point to the extracted release folder.
-* Click on the extension icon and use it
-
-#### Opera
-
-* Open `opera://extensions` in opera
-* Toggle the developer mode by clicking on the toggle button on the top right corner
-* Download the latest release from the [releases page](https://github.com/gautamkrishnar/refined-github-feeds/releases/latest)
-* Extract the release file
-* Load extension in the browser using the **Load Unpacked** button. Point to the extracted release folder.
-* Click on the extension icon and use it
+### Building from sources
+More info [here](installing-via-releases.md)
 
 ## Why?
 
