@@ -3,24 +3,20 @@ Making the GitHub news feeds great again. This extension enables you to filter t
 
 https://user-images.githubusercontent.com/8397274/123520376-05921980-d6ce-11eb-8f6d-04d09e1486c9.mov
 
-## Supported Browsers
-- Chrome 
-- Firefox
-- Opera
-- Edge
+## Installing
 
-## Downloads
-- [Github Releases](https://github.com/gautamkrishnar/refined-github-feeds/releases/latest)
-- Chrome webstore - **Coming Soon (Under review)**
-- Edge Add-ons - **Coming Soon (Under review)**
-- Opera Add-ons - **Coming Soon (Under review)**
+### Chrome / Opera / Edge
+[link-chrome]: https://chrome.google.com/webstore/detail/refined-github-feeds/hhojcmhjganofpbcbfkmpkjfkboddhpa 'Version published on Chrome Web Store'
 
-#### Firefox
+[<img src="https://raw.githubusercontent.com/alrra/browser-logos/90fdf03c/src/chrome/chrome.svg" width="48" alt="Chrome" valign="middle">][link-chrome] [<img valign="middle" src="https://img.shields.io/chrome-web-store/v/hhojcmhjganofpbcbfkmpkjfkboddhpa.svg?label=%20">][link-chrome] also compatible with [<img src="https://raw.githubusercontent.com/alrra/browser-logos/90fdf03c/src/edge/edge.svg" width="24" alt="Edge" valign="middle">][link-chrome] [<img src="https://raw.githubusercontent.com/alrra/browser-logos/90fdf03c/src/opera/opera.svg" width="24" alt="Opera" valign="middle">][link-chrome]
+
+### Firefox
 [link-firefox]: https://addons.mozilla.org/en-US/firefox/addon/refined-github-feeds/ 'Version published on Mozilla Add-ons'
 
 [<img src="https://raw.githubusercontent.com/alrra/browser-logos/90fdf03c/src/firefox/firefox.svg" width="48" alt="Firefox" valign="middle">][link-firefox] [<img valign="middle" src="https://img.shields.io/amo/v/refined-github-feeds.svg?label=%20">][link-firefox]
  
-## Installing via Github Releases
+### Installing via Github Releases
+Download the latest release from [Github Releases](https://github.com/gautamkrishnar/refined-github-feeds/releases/latest)
 
 #### Chrome
 
