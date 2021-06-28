@@ -14,8 +14,12 @@ https://user-images.githubusercontent.com/8397274/123520376-05921980-d6ce-11eb-8
 - Chrome webstore - **Coming Soon (Under review)**
 - Edge Add-ons - **Coming Soon (Under review)**
 - Opera Add-ons - **Coming Soon (Under review)**
-- Firefox Add-ons - **Coming Soon (Under review)**
 
+#### Firefox
+[link-firefox]: https://addons.mozilla.org/en-US/firefox/addon/refined-github-feeds/ 'Version published on Mozilla Add-ons'
+
+[<img src="https://raw.githubusercontent.com/alrra/browser-logos/90fdf03c/src/firefox/firefox.svg" width="48" alt="Firefox" valign="middle">][link-firefox] [<img valign="middle" src="https://img.shields.io/amo/v/refined-github-feeds.svg?label=%20">][link-firefox]
+ 
 ## Installing via Github Releases
 
 #### Chrome
