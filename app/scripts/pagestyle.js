@@ -19,7 +19,7 @@ async function setRGHFSavedStyles() {
         // Generating style sheet based on saved extension settings
         const status = savedState[key];
         if (!status) {
-            extStyle.textContent =  extStyle.innerText + CSSStyles[key] + '\n\n';
+            extStyle.textContent =  `\n` + extStyle.innerText + CSSStyles[key] + '\n';
         }
     });
     document.getElementsByTagName("head")[0].appendChild(extStyle);
