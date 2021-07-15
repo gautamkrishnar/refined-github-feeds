@@ -3,9 +3,10 @@ let SavedState = null;
 
 async function onLoad() {
     SavedState = await InitAndReturnStates();
-    Object.keys(SavedState).forEach((key)=> {
+    const savedStateKeys = Object.keys(SavedState);
+    Object.keys(CSSStyles).forEach((key)=> {
         const checkbox = document.getElementById(key);
-        checkbox.checked = SavedState[key];
+        checkbox.checked = savedStateKeys.includes(key) ? SavedState[key] : true;
         checkbox.addEventListener('click', onClickHandler);
     });
 }
