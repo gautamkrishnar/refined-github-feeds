@@ -8,7 +8,8 @@ export const CSSStyles = {
     releases: `#dashboard .release { display: none; }`,
     stars: `#dashboard .watch_started { display: none; }`,
     follows: `#dashboard .follow { display: none; }`,
-    forks: `#dashboard .fork { display: none; }`
+    forks: `#dashboard .fork { display: none; }`,
+    push: `#dashboard .push { display: none; }`,
 };
 
 export const STORAGE_KEY = 'refinedGithubData';
@@ -42,7 +43,8 @@ export async function InitAndReturnStates() {
             forks: true,
             stars: true,
             follows: true,
-            releases: true
+            releases: true,
+            push: true
         };
         await browser.storage.local.set({
             [STORAGE_KEY]: SavedState
