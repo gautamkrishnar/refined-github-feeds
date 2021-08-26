@@ -4,6 +4,10 @@ Download the latest source code from [Github Releases](https://github.com/gautam
 
 ### Install the dependencies
 - Install Node JS and NPM
+- To install dependancies, run the following command in the extension's directory:
+```sh
+npm install
+```
 
 #### Chrome
 * Open `chrome://extensions` in chrome
